@@ -1,3 +1,4 @@
 flask
 together
 python-dotenv
+gunicorn
