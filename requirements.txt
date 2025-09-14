@@ -2,3 +2,4 @@ flask
 together
 python-dotenv
 gunicorn
+google.generativeai
