@@ -1,9 +1,18 @@
 from flask import Flask, request, jsonify
-from analyze import analyze_label # Import the analyze_label function
+from analyze import analyze_label # Import the analyze_label function from analyze
 import os
 import json # Import json for potential error handling or direct JSON return
 
 app = Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def health_check():
+    """Health check endpoint for Render deployment"""
+    return jsonify({
+        "status": "healthy",
+        "message": "Safe Pick Allergy Backend is running!",
+        "endpoints": ["/analyze"]
+    }), 200
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
