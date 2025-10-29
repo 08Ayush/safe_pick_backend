@@ -11,14 +11,14 @@ api_key = os.getenv("GEMINI_API_KEY")
 api_url = os.getenv("GEMINI_API_URL")
 
 # Check if the API key is found, otherwise exit with an error message
-if not api_key:
-    print("ERROR: GEMINI_API_KEY not found in .env file!")
-    print("Please ensure your .env file is in the same directory and contains 'GEMINI_API_KEY=\"YOUR_API_KEY_HERE\"'.")
-    exit()
+# if not api_key:
+#     print("ERROR: GEMINI_API_KEY not found in .env file!")
+#     print("Please ensure your .env file is in the same directory and contains 'GEMINI_API_KEY=\"YOUR_API_KEY_HERE\"'.")
+#     exit()
 
-if not api_url:
-    print("ERROR: GEMINI_API_URL not found in .env file!")
-    exit()
+# if not api_url:
+#     print("ERROR: GEMINI_API_URL not found in .env file!")
+#     exit()
 
 def encode_image(image_path):
     """
