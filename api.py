@@ -55,4 +55,3 @@ if __name__ == "__main__":
     # in the Flutter app's scan_screen.dart file.
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-
